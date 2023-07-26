@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 provider "kubernetes" {
-  config_path    = "~/.kube/config"
+  config_path = "~/.kube/config"
 }
 
 terraform {
@@ -14,7 +14,7 @@ terraform {
       version = "~> 5.0"
     }
     kubernetes = {
-      source = "hashicorp/kubernetes"
+      source  = "hashicorp/kubernetes"
       version = "~> 2.22"
     }
   }
