@@ -13,11 +13,11 @@ variable "bucket_name" {
 variable "vpc_id" {
   description = "VPC ID to use for EKS cluster"
   type        = string
-  default     = "ptqa-opsfleet"
+  default     = "vpc-08c5e30a0899aef21"
 }
 
 variable "subnet_ids" {
   description = "A list of subnets to use for EKS cluster"
   type        = list(string)
-  default     = "ptqa-opsfleet"
+  default     = ["subnet-01729fb7f1767abd1", "subnet-0099868c9d6986d71", "subnet-0e99f9e31c8b3aec4", "subnet-0d5c2916714620e29"]
 }

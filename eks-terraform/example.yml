@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s3-example
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: s3-example
+  template:
+    metadata:
+      labels:
+        app: s3-example
+    spec:
+      serviceAccountName: service-account-s3
+      containers:
+      - name: s3-example
+        image: public.ecr.aws/aws-cli/aws-cli:2.13.3
+        command: ["sleep"] 
+        args: ["inf"]
