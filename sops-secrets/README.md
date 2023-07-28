@@ -25,6 +25,7 @@ data:
 * Create k8s resource with `$ sops -d secret.yml | kubectl apply -f -`
 * Refer to secrets in you deployment spec as shown in `example.yml`
 * Commit all files to git and don't worry about storing secrets in git anymore
+* Edit secrets with `sops secret.yml`
 
 ## Alternative solutions
 
